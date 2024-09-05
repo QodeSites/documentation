@@ -3,7 +3,7 @@ name: Deploy MkDocs Site
 on:
   push:
     branches:
-      - main # Replace 'main' with your default branch name if different
+      - master # Ensure this matches the branch where you're making changes
 
 jobs:
   deploy:
@@ -16,12 +16,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x" # Replace with your Python version
+          python-version: "3.12.3" # Replace with your specific Python version
 
       - name: Install dependencies
         run: |
           pip install mkdocs
-          pip install mkdocs-material  # Include if using the Material theme or other plugins
+          pip install mkdocs-material  # Include if using this theme or other plugins
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
