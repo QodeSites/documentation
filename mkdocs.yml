@@ -1,3 +1,17 @@
-site_name: My Docs
+site_name: Qode Software Documentation
+nav:
+  - Home: index.md
+  - Product: product.md
+  - Technology: technology.md
+  - Integration: integration.md
+  - Folder Structure: folder-structure.md
+  - API and Backend Communication: api-backend-communication.md
+  - Unified Styling Standard: styling-standard.md
+  - Deployment Process: deployment-process.md
+  - Documentation: documentation.md
+  - Open Source Tools: open-source-tools.md
+  - Third-party Integrations: third-party-integrations.md
+  - Branching Strategy: branching-strategy.md
+  - Development Guidelines: development-guidelines.md
 theme:
-  name: material
+  name: readthedocs
